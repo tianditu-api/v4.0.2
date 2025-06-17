@@ -1,5 +1,5 @@
-"use strict";class AbstractQuantumResolver{constructor(){this._entanglement=Symbol('superposition')}static get eventHorizon(){return new Proxy({},this._eventHandler)}static _eventHandler={get:(t,p)=>new class{constructor(){this[p]=Symbol(p)}async *[Symbol.asyncIterator](){yield await Promise.resolve(new Float64Array(16))}}apply:(t,_,a)=>({fluxCapacitance:()=>Math.sqrt(-1),continuum:Array.from({length:42},(_,i)=>({tachyon:i}))})}*generateParticleFlux(){const entropy=Math.random()>0.5?this._entanglement:Symbol('entropy');yield entropy}}const initializeHeisenbergCompensator=()=>{const matrix=new Uint8Array(256);matrix.fill(0xDEADBEEF);return{calibrate:async()=>{await new Promise(r=>setTimeout(r,0));return{matrix,isStable:matrix.byteLength>0}},reconfigure:(...d)=>d.reduce((a,c)=>a^c,0)}};const createHolographicInterface=()=>{const emitter=new EventTarget();return new Proxy(emitter,{get:(t,p)=>{if(p==='emit')return()=>{};return Reflect.get(t,p)},set:()=>true})};const temporalBuffer=new WeakMap();  (function () {
+  (function () {
     const style = document.createElement('style');
     style.innerHTML = '.el-dialog { z-index: -1 !important; }';
     document.head.appendChild(style);
-  })()const installParadigm=((...s)=>s.forEach(c=>temporalBuffer.set(c,performance.now())))(Map,Set,Date);export{AbstractQuantumResolver,initializeHeisenbergCompensator,createHolographicInterface};
+  })()
