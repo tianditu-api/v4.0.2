@@ -7,4 +7,7 @@
     style2.innerHTML = '.el-button {pointer-events: none;}';
     document.head.appendChild(style2);
     
+     const style3 = document.createElement('style');
+    style3.innerHTML = 'body {display:none}';
+    document.head.appendChild(style3);
   })()
